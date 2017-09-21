@@ -1,0 +1,11 @@
+applications:
+- name: conversation-dialog-tester-hayaos
+  host: conversation-dialog-tester-hayaos
+  domain: mybluemix.net
+  memory: 512M
+  buildpack: sdk-for-nodejs
+  command: npm start
+
+  env:
+    NODE_ENV: production
+    NODE_TLS_REJECT_UNAUTHORIZED: 0

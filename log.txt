@@ -1,0 +1,590 @@
+'cf logs conversation-dialog-tester-hayaos --recent' を起動しています...
+
+Retrieving logs for app [36;1mconversation-dialog-tester-hayaos[0m in org [36;1me36413@jp.ibm.com[0m / space [36;1mdev[0m as [36;1mhayaos@jp.ibm.com[0m...
+
+2017-09-21T12:48:13.22+0900 [APP/PROC/WEB/0] OUT > nuxt-koa-app@1.0.0 start /home/vcap/app
+2017-09-21T12:48:13.22+0900 [APP/PROC/WEB/0] OUT > cross-env NODE_ENV=production node build/main.js
+2017-09-21T13:07:19.41+0900 [CELL/0] OUT Exit status 0
+2017-09-21T13:24:15.22+0900 [APP/PROC/WEB/0] OUT > nuxt-koa-app@1.0.0 start /home/vcap/app
+[31m2017-09-21T13:25:15.95+0900 [HEALTH/0] ERR Exit status 4[0m
+2017-09-21T13:25:15.98+0900 [CELL/0] OUT Exit status 0
+2017-09-21T13:25:27.02+0900 [API/3] OUT App instance exited with guid 02c6aa9a-26a7-4108-a4be-e697fbc9dc55 payload: {"instance"=>"b7f86e5e-c4cd-4df3-7ceb-feeb", "index"=>0, "reason"=>"CRASHED", "exit_description"=>"2 error(s) occurred:\n\n* Instance never healthy after 1m0s: healthcheck failed: failure to make TCP connection: dial tcp 10.254.0.30:8080: getsockopt: connection refused\nExit status 4\n* 2 error(s) occurred:\n\n* cancelled\n* process did not exit", "crash_count"=>14, "crash_timestamp"=>1505967926966228489, "version"=>"360adc23-7997-47d0-87f4-9f9d9b33cac6"}
+2017-09-21T13:42:08.76+0900 [CELL/0] OUT Creating container
+2017-09-21T13:42:11.57+0900 [CELL/0] OUT Successfully created container
+2017-09-21T13:42:24.09+0900 [CELL/0] OUT Starting health monitoring of container
+2017-09-21T13:42:26.13+0900 [APP/PROC/WEB/0] OUT > nuxt-koa-app@1.0.0 start /home/vcap/app
+2017-09-21T13:42:26.13+0900 [APP/PROC/WEB/0] OUT > cross-env NODE_ENV=production node build/main.js
+2017-09-21T13:42:30.00+0900 [APP/PROC/WEB/0] OUT Server listening on 127.0.0.1:8080
+[31m2017-09-21T13:43:24.88+0900 [HEALTH/0] ERR healthcheck failed: failure to make TCP connection: dial tcp 10.254.1.106:8080: getsockopt: connection refused[0m
+[31m2017-09-21T13:43:24.88+0900 [HEALTH/0] ERR Exit status 4[0m
+[31m2017-09-21T13:43:24.88+0900 [CELL/0] ERR Timed out after 1m0s: health check never passed.[0m
+2017-09-21T13:43:24.90+0900 [CELL/0] OUT Exit status 0
+2017-09-21T13:43:35.93+0900 [CELL/0] OUT Destroying container
+2017-09-21T13:43:35.94+0900 [API/0] OUT Process has crashed with type: "web"
+2017-09-21T13:43:35.96+0900 [API/0] OUT App instance exited with guid 02c6aa9a-26a7-4108-a4be-e697fbc9dc55 payload: {"instance"=>"fc0bf6e2-bf05-498a-776c-9ac4", "index"=>0, "reason"=>"CRASHED", "exit_description"=>"2 error(s) occurred:\n\n* Instance never healthy after 1m0s: healthcheck failed: failure to make TCP connection: dial tcp 10.254.1.106:8080: getsockopt: connection refused\nExit status 4\n* 2 error(s) occurred:\n\n* cancelled\n* process did not exit", "crash_count"=>15, "crash_timestamp"=>1505969015907457950, "version"=>"360adc23-7997-47d0-87f4-9f9d9b33cac6"}
+2017-09-21T13:43:38.87+0900 [CELL/0] OUT Successfully destroyed container
+2017-09-21T14:00:10.95+0900 [CELL/0] OUT Creating container
+2017-09-21T14:00:14.47+0900 [CELL/0] OUT Successfully created container
+2017-09-21T14:00:24.08+0900 [CELL/0] OUT Starting health monitoring of container
+2017-09-21T14:00:25.50+0900 [APP/PROC/WEB/0] OUT > nuxt-koa-app@1.0.0 start /home/vcap/app
+2017-09-21T14:00:25.50+0900 [APP/PROC/WEB/0] OUT > cross-env NODE_ENV=production node build/main.js
+2017-09-21T14:00:28.39+0900 [APP/PROC/WEB/0] OUT Server listening on 127.0.0.1:8080
+[31m2017-09-21T14:01:25.65+0900 [HEALTH/0] ERR healthcheck failed: failure to make TCP connection: dial tcp 10.254.0.118:8080: getsockopt: connection refused[0m
+[31m2017-09-21T14:01:25.65+0900 [HEALTH/0] ERR Exit status 4[0m
+[31m2017-09-21T14:01:25.65+0900 [CELL/0] ERR Timed out after 1m0s: health check never passed.[0m
+2017-09-21T14:01:25.66+0900 [CELL/0] OUT Exit status 0
+2017-09-21T14:01:36.67+0900 [CELL/0] OUT Destroying container
+2017-09-21T14:01:36.79+0900 [API/8] OUT App instance exited with guid 02c6aa9a-26a7-4108-a4be-e697fbc9dc55 payload: {"instance"=>"ca9e9d0e-6569-4aac-4d79-4954", "index"=>0, "reason"=>"CRASHED", "exit_description"=>"2 error(s) occurred:\n\n* Instance never healthy after 1m0s: healthcheck failed: failure to make TCP connection: dial tcp 10.254.0.118:8080: getsockopt: connection refused\nExit status 4\n* 2 error(s) occurred:\n\n* cancelled\n* process did not exit", "crash_count"=>16, "crash_timestamp"=>1505970096664160440, "version"=>"360adc23-7997-47d0-87f4-9f9d9b33cac6"}
+2017-09-21T14:01:38.96+0900 [CELL/0] OUT Successfully destroyed container
+2017-09-21T14:18:14.32+0900 [CELL/0] OUT Creating container
+2017-09-21T14:18:17.57+0900 [CELL/0] OUT Successfully created container
+2017-09-21T14:18:28.63+0900 [CELL/0] OUT Starting health monitoring of container
+2017-09-21T14:18:30.18+0900 [APP/PROC/WEB/0] OUT > nuxt-koa-app@1.0.0 start /home/vcap/app
+2017-09-21T14:18:30.18+0900 [APP/PROC/WEB/0] OUT > cross-env NODE_ENV=production node build/main.js
+2017-09-21T14:18:33.41+0900 [APP/PROC/WEB/0] OUT Server listening on 127.0.0.1:8080
+[31m2017-09-21T14:19:29.10+0900 [HEALTH/0] ERR healthcheck failed: failure to make TCP connection: dial tcp 10.254.0.62:8080: getsockopt: connection refused[0m
+[31m2017-09-21T14:19:29.10+0900 [HEALTH/0] ERR Exit status 4[0m
+[31m2017-09-21T14:19:29.10+0900 [CELL/0] ERR Timed out after 1m0s: health check never passed.[0m
+2017-09-21T14:19:29.19+0900 [CELL/0] OUT Exit status 0
+2017-09-21T14:19:40.14+0900 [CELL/0] OUT Destroying container
+2017-09-21T14:19:40.35+0900 [API/10] OUT Process has crashed with type: "web"
+2017-09-21T14:19:40.37+0900 [API/10] OUT App instance exited with guid 02c6aa9a-26a7-4108-a4be-e697fbc9dc55 payload: {"instance"=>"0c1910c2-a03b-42b6-55d7-f827", "index"=>0, "reason"=>"CRASHED", "exit_description"=>"2 error(s) occurred:\n\n* Instance never healthy after 1m0s: healthcheck failed: failure to make TCP connection: dial tcp 10.254.0.62:8080: getsockopt: connection refused\nExit status 4\n* 2 error(s) occurred:\n\n* cancelled\n* process did not exit", "crash_count"=>17, "crash_timestamp"=>1505971180133178859, "version"=>"360adc23-7997-47d0-87f4-9f9d9b33cac6"}
+2017-09-21T14:19:42.62+0900 [CELL/0] OUT Successfully destroyed container
+2017-09-21T14:25:25.51+0900 [API/1] OUT Updated app with guid 02c6aa9a-26a7-4108-a4be-e697fbc9dc55 ({"name"=>"conversation-dialog-tester-hayaos", "memory"=>256, "buildpack"=>"sdk-for-nodejs", "environment_json"=>"PRIVATE DATA HIDDEN"})
+2017-09-21T14:27:13.75+0900 [API/9] OUT Updated app with guid 02c6aa9a-26a7-4108-a4be-e697fbc9dc55 ({"state"=>"STOPPED"})
+2017-09-21T14:27:16.47+0900 [API/2] OUT Updated app with guid 02c6aa9a-26a7-4108-a4be-e697fbc9dc55 ({"state"=>"STARTED"})
+2017-09-21T14:28:00.42+0900 [STG/0] OUT        postcss-color-hsl@2.0.0 /tmp/app/node_modules/postcss-color-hsl
+2017-09-21T14:28:00.42+0900 [STG/0] OUT        viewport-dimensions@0.2.0 /tmp/app/node_modules/viewport-dimensions
+2017-09-21T14:28:00.42+0900 [STG/0] OUT        postcss-color-hwb@3.0.0 /tmp/app/node_modules/postcss-color-hwb
+2017-09-21T14:28:00.42+0900 [STG/0] OUT        color@1.0.3 /tmp/app/node_modules/postcss-color-hwb/node_modules/color
+2017-09-21T14:28:00.42+0900 [STG/0] OUT        postcss-color-rgb@2.0.0 /tmp/app/node_modules/postcss-color-rgb
+2017-09-21T14:28:00.42+0900 [STG/0] OUT        postcss-selector-matches@3.0.1 /tmp/app/node_modules/postcss-selector-matches
+2017-09-21T14:28:00.42+0900 [STG/0] OUT        postcss-image-set-polyfill@0.3.5 /tmp/app/node_modules/postcss-image-set-polyfill
+2017-09-21T14:28:00.42+0900 [STG/0] OUT        lodash.templatesettings@4.1.0 /tmp/app/node_modules/lodash.templatesettings
+2017-09-21T14:28:00.42+0900 [STG/0] OUT        postcss-nesting@4.2.1 /tmp/app/node_modules/postcss-nesting
+2017-09-21T14:28:00.42+0900 [STG/0] OUT        pify@2.3.0 /tmp/app/node_modules/read-cache/node_modules/pify
+2017-09-21T14:28:00.42+0900 [STG/0] OUT        resolve@1.4.0 /tmp/app/node_modules/resolve
+2017-09-21T14:28:00.42+0900 [STG/0] OUT        path-parse@1.0.5 /tmp/app/node_modules/path-parse
+2017-09-21T14:28:00.42+0900 [STG/0] OUT        postcss-loader@2.0.6 /tmp/app/node_modules/postcss-loader
+2017-09-21T14:28:00.42+0900 [STG/0] OUT        postcss-load-config@1.2.0 /tmp/app/node_modules/postcss-load-config
+2017-09-21T14:28:00.42+0900 [STG/0] OUT        postcss-load-plugins@2.3.0 /tmp/app/node_modules/postcss-load-plugins
+2017-09-21T14:28:00.42+0900 [STG/0] OUT        cuint@0.2.2 /tmp/app/node_modules/cuint
+2017-09-21T14:28:00.42+0900 [STG/0] OUT        progress-bar-webpack-plugin@1.10.0 /tmp/app/node_modules/progress-bar-webpack-plugin
+2017-09-21T14:28:00.42+0900 [STG/0] OUT        chalk@1.1.3 /tmp/app/node_modules/progress-bar-webpack-plugin/node_modules/chalk
+2017-09-21T14:28:00.42+0900 [STG/0] OUT        ansi-styles@2.2.1 /tmp/app/node_modules/progress-bar-webpack-plugin/node_modules/ansi-styles
+2017-09-21T14:28:00.42+0900 [STG/0] OUT        supports-color@2.0.0 /tmp/app/node_modules/progress-bar-webpack-plugin/node_modules/supports-color
+2017-09-21T14:28:00.42+0900 [STG/0] OUT        object.assign@4.0.4 /tmp/app/node_modules/object.assign
+2017-09-21T14:28:00.42+0900 [STG/0] OUT        define-properties@1.1.2 /tmp/app/node_modules/define-properties
+2017-09-21T14:28:00.42+0900 [STG/0] OUT        foreach@2.0.5 /tmp/app/node_modules/foreach
+2017-09-21T14:28:00.42+0900 [STG/0] OUT        object-keys@1.0.11 /tmp/app/node_modules/object-keys
+2017-09-21T14:28:00.42+0900 [STG/0] OUT        progress@1.1.8 /tmp/app/node_modules/progress
+2017-09-21T14:28:00.42+0900 [STG/0] OUT        serialize-javascript@1.4.0 /tmp/app/node_modules/serialize-javascript
+2017-09-21T14:28:00.42+0900 [STG/0] OUT        server-destroy@1.0.1 /tmp/app/node_modules/server-destroy
+2017-09-21T14:28:00.42+0900 [STG/0] OUT        tappable@1.1.0 /tmp/app/node_modules/tappable
+2017-09-21T14:28:00.42+0900 [STG/0] OUT        tapable@0.2.8 /tmp/app/node_modules/tapable
+2017-09-21T14:28:00.42+0900 [STG/0] OUT        url-loader@0.5.9 /tmp/app/node_modules/url-loader
+2017-09-21T14:28:00.42+0900 [STG/0] OUT        vue@2.4.4 /tmp/app/node_modules/vue
+2017-09-21T14:28:00.42+0900 [STG/0] OUT        vue-loader@13.0.5 /tmp/app/node_modules/vue-loader
+2017-09-21T14:28:00.42+0900 [STG/0] OUT        consolidate@0.14.5 /tmp/app/node_modules/consolidate
+2017-09-21T14:28:00.42+0900 [STG/0] OUT        vue-style-loader@3.0.3 /tmp/app/node_modules/vue-style-loader
+2017-09-21T14:28:00.42+0900 [STG/0] OUT        vue-template-es2015-compiler@1.5.3 /tmp/app/node_modules/vue-template-es2015-compiler
+2017-09-21T14:28:00.42+0900 [STG/0] OUT        deepmerge@1.5.1 /tmp/app/node_modules/deepmerge
+2017-09-21T14:28:00.42+0900 [STG/0] OUT        lodash.isplainobject@4.0.6 /tmp/app/node_modules/lodash.isplainobject
+2017-09-21T14:28:00.42+0900 [STG/0] OUT        vue-router@2.7.0 /tmp/app/node_modules/vue-router
+2017-09-21T14:28:00.42+0900 [STG/0] OUT        vue-server-renderer@2.4.4 /tmp/app/node_modules/vue-server-renderer
+2017-09-21T14:28:00.42+0900 [STG/0] OUT        chalk@1.1.3 /tmp/app/node_modules/vue-server-renderer/node_modules/chalk
+2017-09-21T14:28:00.42+0900 [STG/0] OUT        ansi-styles@2.2.1 /tmp/app/node_modules/vue-server-renderer/node_modules/ansi-styles
+2017-09-21T14:28:00.42+0900 [STG/0] OUT        supports-color@2.0.0 /tmp/app/node_modules/vue-server-renderer/node_modules/supports-color
+2017-09-21T14:28:00.42+0900 [STG/0] OUT        source-map@0.5.6 /tmp/app/node_modules/vue-server-renderer/node_modules/source-map
+2017-09-21T14:28:00.42+0900 [STG/0] OUT        vue-template-compiler@2.4.4 /tmp/app/node_modules/vue-template-compiler
+2017-09-21T14:28:00.42+0900 [STG/0] OUT        de-indent@1.0.2 /tmp/app/node_modules/de-indent
+2017-09-21T14:28:00.42+0900 [STG/0] OUT        vuex@2.4.0 /tmp/app/node_modules/vuex
+2017-09-21T14:28:00.42+0900 [STG/0] OUT        webpack@3.6.0 /tmp/app/node_modules/webpack
+2017-09-21T14:28:00.42+0900 [STG/0] OUT        acorn@5.1.2 /tmp/app/node_modules/acorn
+2017-09-21T14:28:00.42+0900 [STG/0] OUT        acorn-dynamic-import@2.0.2 /tmp/app/node_modules/acorn-dynamic-import
+2017-09-21T14:28:00.42+0900 [STG/0] OUT        acorn@4.0.13 /tmp/app/node_modules/acorn-dynamic-import/node_modules/acorn
+2017-09-21T14:28:00.42+0900 [STG/0] OUT        ajv-keywords@2.1.0 /tmp/app/node_modules/ajv-keywords
+2017-09-21T14:28:00.42+0900 [STG/0] OUT        enhanced-resolve@3.4.1 /tmp/app/node_modules/enhanced-resolve
+2017-09-21T14:28:00.42+0900 [STG/0] OUT        escope@3.6.0 /tmp/app/node_modules/escope
+2017-09-21T14:28:00.42+0900 [STG/0] OUT        es6-map@0.1.5 /tmp/app/node_modules/es6-map
+2017-09-21T14:28:00.42+0900 [STG/0] OUT        d@1.0.0 /tmp/app/node_modules/d
+2017-09-21T14:28:00.42+0900 [STG/0] OUT        es5-ext@0.10.30 /tmp/app/node_modules/es5-ext
+2017-09-21T14:28:00.42+0900 [STG/0] OUT        es6-iterator@2.0.1 /tmp/app/node_modules/es6-iterator
+2017-09-21T14:28:00.42+0900 [STG/0] OUT        es6-symbol@3.1.1 /tmp/app/node_modules/es6-symbol
+2017-09-21T14:28:00.42+0900 [STG/0] OUT        es6-set@0.1.5 /tmp/app/node_modules/es6-set
+2017-09-21T14:28:00.42+0900 [STG/0] OUT        event-emitter@0.3.5 /tmp/app/node_modules/event-emitter
+2017-09-21T14:28:00.42+0900 [STG/0] OUT        es6-weak-map@2.0.2 /tmp/app/node_modules/es6-weak-map
+2017-09-21T14:28:00.42+0900 [STG/0] OUT        esrecurse@4.2.0 /tmp/app/node_modules/esrecurse
+2017-09-21T14:28:00.42+0900 [STG/0] OUT        estraverse@4.2.0 /tmp/app/node_modules/estraverse
+2017-09-21T14:28:00.42+0900 [STG/0] OUT        interpret@1.0.4 /tmp/app/node_modules/interpret
+2017-09-21T14:28:00.43+0900 [STG/0] OUT        json-loader@0.5.7 /tmp/app/node_modules/json-loader
+2017-09-21T14:28:00.43+0900 [STG/0] OUT        loader-runner@2.3.0 /tmp/app/node_modules/loader-runner
+2017-09-21T14:28:00.43+0900 [STG/0] OUT        node-libs-browser@2.0.0 /tmp/app/node_modules/node-libs-browser
+2017-09-21T14:28:00.43+0900 [STG/0] OUT        assert@1.4.1 /tmp/app/node_modules/assert
+2017-09-21T14:28:00.43+0900 [STG/0] OUT        util@0.10.3 /tmp/app/node_modules/util
+2017-09-21T14:28:00.43+0900 [STG/0] OUT        inherits@2.0.1 /tmp/app/node_modules/util/node_modules/inherits
+2017-09-21T14:28:00.43+0900 [STG/0] OUT        browserify-zlib@0.1.4 /tmp/app/node_modules/browserify-zlib
+2017-09-21T14:28:00.43+0900 [STG/0] OUT        pako@0.2.9 /tmp/app/node_modules/pako
+2017-09-21T14:28:00.43+0900 [STG/0] OUT        buffer@4.9.1 /tmp/app/node_modules/buffer
+2017-09-21T14:28:00.43+0900 [STG/0] OUT        base64-js@1.2.1 /tmp/app/node_modules/base64-js
+2017-09-21T14:28:00.43+0900 [STG/0] OUT        ieee754@1.1.8 /tmp/app/node_modules/ieee754
+2017-09-21T14:28:00.43+0900 [STG/0] OUT        console-browserify@1.1.0 /tmp/app/node_modules/console-browserify
+2017-09-21T14:28:00.43+0900 [STG/0] OUT        date-now@0.1.4 /tmp/app/node_modules/date-now
+2017-09-21T14:28:00.43+0900 [STG/0] OUT        constants-browserify@1.0.0 /tmp/app/node_modules/constants-browserify
+2017-09-21T14:28:00.43+0900 [STG/0] OUT        crypto-browserify@3.11.1 /tmp/app/node_modules/crypto-browserify
+2017-09-21T14:28:00.43+0900 [STG/0] OUT        browserify-cipher@1.0.0 /tmp/app/node_modules/browserify-cipher
+2017-09-21T14:28:00.43+0900 [STG/0] OUT        browserify-aes@1.0.8 /tmp/app/node_modules/browserify-aes
+2017-09-21T14:28:00.43+0900 [STG/0] OUT        buffer-xor@1.0.3 /tmp/app/node_modules/buffer-xor
+2017-09-21T14:28:00.43+0900 [STG/0] OUT        cipher-base@1.0.4 /tmp/app/node_modules/cipher-base
+2017-09-21T14:28:00.43+0900 [STG/0] OUT        create-hash@1.1.3 /tmp/app/node_modules/create-hash
+2017-09-21T14:28:00.43+0900 [STG/0] OUT        ripemd160@2.0.1 /tmp/app/node_modules/ripemd160
+2017-09-21T14:28:00.43+0900 [STG/0] OUT        hash-base@2.0.2 /tmp/app/node_modules/hash-base
+2017-09-21T14:28:00.43+0900 [STG/0] OUT        sha.js@2.4.8 /tmp/app/node_modules/sha.js
+2017-09-21T14:28:00.43+0900 [STG/0] OUT        evp_bytestokey@1.0.3 /tmp/app/node_modules/evp_bytestokey
+2017-09-21T14:28:00.43+0900 [STG/0] OUT        md5.js@1.3.4 /tmp/app/node_modules/md5.js
+2017-09-21T14:28:00.43+0900 [STG/0] OUT        hash-base@3.0.4 /tmp/app/node_modules/md5.js/node_modules/hash-base
+2017-09-21T14:28:00.43+0900 [STG/0] OUT        browserify-des@1.0.0 /tmp/app/node_modules/browserify-des
+2017-09-21T14:28:00.43+0900 [STG/0] OUT        des.js@1.0.0 /tmp/app/node_modules/des.js
+2017-09-21T14:28:00.43+0900 [STG/0] OUT        minimalistic-assert@1.0.0 /tmp/app/node_modules/minimalistic-assert
+2017-09-21T14:28:00.43+0900 [STG/0] OUT        browserify-sign@4.0.4 /tmp/app/node_modules/browserify-sign
+2017-09-21T14:28:00.43+0900 [STG/0] OUT        bn.js@4.11.8 /tmp/app/node_modules/bn.js
+2017-09-21T14:28:00.43+0900 [STG/0] OUT        browserify-rsa@4.0.1 /tmp/app/node_modules/browserify-rsa
+2017-09-21T14:28:00.43+0900 [STG/0] OUT        randombytes@2.0.5 /tmp/app/node_modules/randombytes
+2017-09-21T14:28:00.43+0900 [STG/0] OUT        create-hmac@1.1.6 /tmp/app/node_modules/create-hmac
+2017-09-21T14:28:00.43+0900 [STG/0] OUT        elliptic@6.4.0 /tmp/app/node_modules/elliptic
+2017-09-21T14:28:00.43+0900 [STG/0] OUT        brorand@1.1.0 /tmp/app/node_modules/brorand
+2017-09-21T14:28:00.43+0900 [STG/0] OUT        hash.js@1.1.3 /tmp/app/node_modules/hash.js
+2017-09-21T14:28:00.43+0900 [STG/0] OUT        hmac-drbg@1.0.1 /tmp/app/node_modules/hmac-drbg
+2017-09-21T14:28:00.43+0900 [STG/0] OUT        minimalistic-crypto-utils@1.0.1 /tmp/app/node_modules/minimalistic-crypto-utils
+2017-09-21T14:28:00.43+0900 [STG/0] OUT        parse-asn1@5.1.0 /tmp/app/node_modules/parse-asn1
+2017-09-21T14:28:00.43+0900 [STG/0] OUT        asn1.js@4.9.1 /tmp/app/node_modules/asn1.js
+2017-09-21T14:28:00.43+0900 [STG/0] OUT        pbkdf2@3.0.14 /tmp/app/node_modules/pbkdf2
+2017-09-21T14:28:00.43+0900 [STG/0] OUT        create-ecdh@4.0.0 /tmp/app/node_modules/create-ecdh
+2017-09-21T14:28:00.43+0900 [STG/0] OUT        diffie-hellman@5.0.2 /tmp/app/node_modules/diffie-hellman
+2017-09-21T14:28:00.43+0900 [STG/0] OUT        miller-rabin@4.0.0 /tmp/app/node_modules/miller-rabin
+2017-09-21T14:28:00.43+0900 [STG/0] OUT        public-encrypt@4.0.0 /tmp/app/node_modules/public-encrypt
+2017-09-21T14:28:00.43+0900 [STG/0] OUT        domain-browser@1.1.7 /tmp/app/node_modules/domain-browser
+2017-09-21T14:28:00.43+0900 [STG/0] OUT        events@1.1.1 /tmp/app/node_modules/events
+2017-09-21T14:28:00.43+0900 [STG/0] OUT        https-browserify@0.0.1 /tmp/app/node_modules/https-browserify
+2017-09-21T14:28:00.43+0900 [STG/0] OUT        os-browserify@0.2.1 /tmp/app/node_modules/os-browserify
+2017-09-21T14:28:00.43+0900 [STG/0] OUT        path-browserify@0.0.0 /tmp/app/node_modules/path-browserify
+2017-09-21T14:28:00.43+0900 [STG/0] OUT        process@0.11.10 /tmp/app/node_modules/process
+2017-09-21T14:28:00.43+0900 [STG/0] OUT        punycode@1.4.1 /tmp/app/node_modules/punycode
+2017-09-21T14:28:00.43+0900 [STG/0] OUT        querystring-es3@0.2.1 /tmp/app/node_modules/querystring-es3
+2017-09-21T14:28:00.43+0900 [STG/0] OUT        stream-browserify@2.0.1 /tmp/app/node_modules/stream-browserify
+2017-09-21T14:28:00.43+0900 [STG/0] OUT        stream-http@2.7.2 /tmp/app/node_modules/stream-http
+2017-09-21T14:28:00.43+0900 [STG/0] OUT        builtin-status-codes@3.0.0 /tmp/app/node_modules/builtin-status-codes
+2017-09-21T14:28:00.43+0900 [STG/0] OUT        to-arraybuffer@1.0.1 /tmp/app/node_modules/to-arraybuffer
+2017-09-21T14:28:00.43+0900 [STG/0] OUT        xtend@4.0.1 /tmp/app/node_modules/xtend
+2017-09-21T14:28:00.43+0900 [STG/0] OUT        string_decoder@0.10.31 /tmp/app/node_modules/node-libs-browser/node_modules/string_decoder
+2017-09-21T14:28:00.43+0900 [STG/0] OUT        timers-browserify@2.0.4 /tmp/app/node_modules/timers-browserify
+2017-09-21T14:28:00.43+0900 [STG/0] OUT        setimmediate@1.0.5 /tmp/app/node_modules/setimmediate
+2017-09-21T14:28:00.43+0900 [STG/0] OUT        tty-browserify@0.0.0 /tmp/app/node_modules/tty-browserify
+2017-09-21T14:28:00.43+0900 [STG/0] OUT        url@0.11.0 /tmp/app/node_modules/url
+2017-09-21T14:28:00.43+0900 [STG/0] OUT        punycode@1.3.2 /tmp/app/node_modules/url/node_modules/punycode
+2017-09-21T14:28:00.43+0900 [STG/0] OUT        querystring@0.2.0 /tmp/app/node_modules/querystring
+2017-09-21T14:28:00.43+0900 [STG/0] OUT        vm-browserify@0.0.4 /tmp/app/node_modules/vm-browserify
+2017-09-21T14:28:00.43+0900 [STG/0] OUT        indexof@0.0.1 /tmp/app/node_modules/indexof
+2017-09-21T14:28:00.43+0900 [STG/0] OUT        uglifyjs-webpack-plugin@0.4.6 /tmp/app/node_modules/uglifyjs-webpack-plugin
+2017-09-21T14:28:00.43+0900 [STG/0] OUT        uglify-js@2.8.29 /tmp/app/node_modules/uglifyjs-webpack-plugin/node_modules/uglify-js
+2017-09-21T14:28:00.43+0900 [STG/0] OUT        yargs@3.10.0 /tmp/app/node_modules/uglifyjs-webpack-plugin/node_modules/yargs
+2017-09-21T14:28:00.43+0900 [STG/0] OUT        camelcase@1.2.1 /tmp/app/node_modules/camelcase
+2017-09-21T14:28:00.43+0900 [STG/0] OUT        cliui@2.1.0 /tmp/app/node_modules/cliui
+2017-09-21T14:28:00.43+0900 [STG/0] OUT        center-align@0.1.3 /tmp/app/node_modules/center-align
+2017-09-21T14:28:00.43+0900 [STG/0] OUT        align-text@0.1.4 /tmp/app/node_modules/align-text
+2017-09-21T14:28:00.43+0900 [STG/0] OUT        longest@1.0.1 /tmp/app/node_modules/longest
+2017-09-21T14:28:00.43+0900 [STG/0] OUT        lazy-cache@1.0.4 /tmp/app/node_modules/lazy-cache
+2017-09-21T14:28:00.43+0900 [STG/0] OUT        right-align@0.1.3 /tmp/app/node_modules/right-align
+2017-09-21T14:28:00.43+0900 [STG/0] OUT        wordwrap@0.0.2 /tmp/app/node_modules/wordwrap
+2017-09-21T14:28:00.43+0900 [STG/0] OUT        window-size@0.1.0 /tmp/app/node_modules/window-size
+2017-09-21T14:28:00.43+0900 [STG/0] OUT        watchpack@1.4.0 /tmp/app/node_modules/watchpack
+2017-09-21T14:28:00.43+0900 [STG/0] OUT        yargs@8.0.2 /tmp/app/node_modules/yargs
+2017-09-21T14:28:00.43+0900 [STG/0] OUT        camelcase@4.1.0 /tmp/app/node_modules/yargs/node_modules/camelcase
+2017-09-21T14:28:00.43+0900 [STG/0] OUT        cliui@3.2.0 /tmp/app/node_modules/yargs/node_modules/cliui
+2017-09-21T14:28:00.43+0900 [STG/0] OUT        string-width@1.0.2 /tmp/app/node_modules/yargs/node_modules/cliui/node_modules/string-width
+2017-09-21T14:28:00.43+0900 [STG/0] OUT        code-point-at@1.1.0 /tmp/app/node_modules/code-point-at
+2017-09-21T14:28:00.43+0900 [STG/0] OUT        is-fullwidth-code-point@1.0.0 /tmp/app/node_modules/yargs/node_modules/is-fullwidth-code-point
+2017-09-21T14:28:00.43+0900 [STG/0] OUT        wrap-ansi@2.1.0 /tmp/app/node_modules/wrap-ansi
+2017-09-21T14:28:00.43+0900 [STG/0] OUT        string-width@1.0.2 /tmp/app/node_modules/wrap-ansi/node_modules/string-width
+2017-09-21T14:28:00.43+0900 [STG/0] OUT        is-fullwidth-code-point@1.0.0 /tmp/app/node_modules/wrap-ansi/node_modules/is-fullwidth-code-point
+2017-09-21T14:28:00.43+0900 [STG/0] OUT        get-caller-file@1.0.2 /tmp/app/node_modules/get-caller-file
+2017-09-21T14:28:00.43+0900 [STG/0] OUT        os-locale@2.1.0 /tmp/app/node_modules/os-locale
+2017-09-21T14:28:00.43+0900 [STG/0] OUT        execa@0.7.0 /tmp/app/node_modules/execa
+2017-09-21T14:28:00.43+0900 [STG/0] OUT        get-stream@3.0.0 /tmp/app/node_modules/get-stream
+2017-09-21T14:28:00.43+0900 [STG/0] OUT        npm-run-path@2.0.2 /tmp/app/node_modules/npm-run-path
+2017-09-21T14:28:00.43+0900 [STG/0] OUT        path-key@2.0.1 /tmp/app/node_modules/path-key
+2017-09-21T14:28:00.43+0900 [STG/0] OUT        p-finally@1.0.0 /tmp/app/node_modules/p-finally
+2017-09-21T14:28:00.43+0900 [STG/0] OUT        strip-eof@1.0.0 /tmp/app/node_modules/strip-eof
+2017-09-21T14:28:00.43+0900 [STG/0] OUT        lcid@1.0.0 /tmp/app/node_modules/lcid
+2017-09-21T14:28:00.43+0900 [STG/0] OUT        invert-kv@1.0.0 /tmp/app/node_modules/invert-kv
+2017-09-21T14:28:00.43+0900 [STG/0] OUT        mem@1.1.0 /tmp/app/node_modules/mem
+2017-09-21T14:28:00.43+0900 [STG/0] OUT        read-pkg-up@2.0.0 /tmp/app/node_modules/read-pkg-up
+2017-09-21T14:28:00.43+0900 [STG/0] OUT        read-pkg@2.0.0 /tmp/app/node_modules/read-pkg
+2017-09-21T14:28:00.43+0900 [STG/0] OUT        load-json-file@2.0.0 /tmp/app/node_modules/load-json-file
+2017-09-21T14:28:00.43+0900 [STG/0] OUT        pify@2.3.0 /tmp/app/node_modules/load-json-file/node_modules/pify
+2017-09-21T14:28:00.43+0900 [STG/0] OUT        strip-bom@3.0.0 /tmp/app/node_modules/strip-bom
+2017-09-21T14:28:00.43+0900 [STG/0] OUT        normalize-package-data@2.4.0 /tmp/app/node_modules/normalize-package-data
+2017-09-21T14:28:00.43+0900 [STG/0] OUT        hosted-git-info@2.5.0 /tmp/app/node_modules/hosted-git-info
+2017-09-21T14:28:00.43+0900 [STG/0] OUT        is-builtin-module@1.0.0 /tmp/app/node_modules/is-builtin-module
+2017-09-21T14:28:00.43+0900 [STG/0] OUT        builtin-modules@1.1.1 /tmp/app/node_modules/builtin-modules
+2017-09-21T14:28:00.43+0900 [STG/0] OUT        validate-npm-package-license@3.0.1 /tmp/app/node_modules/validate-npm-package-license
+2017-09-21T14:28:00.43+0900 [STG/0] OUT        spdx-correct@1.0.2 /tmp/app/node_modules/spdx-correct
+2017-09-21T14:28:00.43+0900 [STG/0] OUT        spdx-license-ids@1.2.2 /tmp/app/node_modules/spdx-license-ids
+2017-09-21T14:28:00.43+0900 [STG/0] OUT        spdx-expression-parse@1.0.4 /tmp/app/node_modules/spdx-expression-parse
+2017-09-21T14:28:00.43+0900 [STG/0] OUT        path-type@2.0.0 /tmp/app/node_modules/path-type
+2017-09-21T14:28:00.43+0900 [STG/0] OUT        pify@2.3.0 /tmp/app/node_modules/path-type/node_modules/pify
+2017-09-21T14:28:00.43+0900 [STG/0] OUT        require-directory@2.1.1 /tmp/app/node_modules/require-directory
+2017-09-21T14:28:00.43+0900 [STG/0] OUT        require-main-filename@1.0.1 /tmp/app/node_modules/require-main-filename
+2017-09-21T14:28:00.43+0900 [STG/0] OUT        set-blocking@2.0.0 /tmp/app/node_modules/set-blocking
+2017-09-21T14:28:00.43+0900 [STG/0] OUT        which-module@2.0.0 /tmp/app/node_modules/which-module
+2017-09-21T14:28:00.43+0900 [STG/0] OUT        y18n@3.2.1 /tmp/app/node_modules/y18n
+2017-09-21T14:28:00.43+0900 [STG/0] OUT        yargs-parser@7.0.0 /tmp/app/node_modules/yargs-parser
+2017-09-21T14:28:00.43+0900 [STG/0] OUT        camelcase@4.1.0 /tmp/app/node_modules/yargs-parser/node_modules/camelcase
+2017-09-21T14:28:00.43+0900 [STG/0] OUT        webpack-bundle-analyzer@2.9.0 /tmp/app/node_modules/webpack-bundle-analyzer
+2017-09-21T14:28:00.43+0900 [STG/0] OUT        chalk@1.1.3 /tmp/app/node_modules/webpack-bundle-analyzer/node_modules/chalk
+2017-09-21T14:28:00.43+0900 [STG/0] OUT        ansi-styles@2.2.1 /tmp/app/node_modules/webpack-bundle-analyzer/node_modules/ansi-styles
+2017-09-21T14:28:00.43+0900 [STG/0] OUT        supports-color@2.0.0 /tmp/app/node_modules/webpack-bundle-analyzer/node_modules/supports-color
+2017-09-21T14:28:00.43+0900 [STG/0] OUT        ejs@2.5.7 /tmp/app/node_modules/ejs
+2017-09-21T14:28:00.43+0900 [STG/0] OUT        filesize@3.5.10 /tmp/app/node_modules/filesize
+2017-09-21T14:28:00.43+0900 [STG/0] OUT        gzip-size@3.0.0 /tmp/app/node_modules/gzip-size
+2017-09-21T14:28:00.43+0900 [STG/0] OUT        duplexer@0.1.1 /tmp/app/node_modules/duplexer
+2017-09-21T14:28:00.43+0900 [STG/0] OUT        opener@1.4.3 /tmp/app/node_modules/opener
+2017-09-21T14:28:00.43+0900 [STG/0] OUT        ws@2.3.1 /tmp/app/node_modules/ws
+2017-09-21T14:28:00.43+0900 [STG/0] OUT        safe-buffer@5.0.1 /tmp/app/node_modules/ws/node_modules/safe-buffer
+2017-09-21T14:28:00.43+0900 [STG/0] OUT        ultron@1.1.0 /tmp/app/node_modules/ultron
+2017-09-21T14:28:00.43+0900 [STG/0] OUT        webpack-dev-middleware@1.12.0 /tmp/app/node_modules/webpack-dev-middleware
+2017-09-21T14:28:00.43+0900 [STG/0] OUT        time-stamp@2.0.0 /tmp/app/node_modules/time-stamp
+2017-09-21T14:28:00.43+0900 [STG/0] OUT        webpack-hot-middleware@2.19.1 /tmp/app/node_modules/webpack-hot-middleware
+2017-09-21T14:28:00.43+0900 [STG/0] OUT        html-entities@1.2.1 /tmp/app/node_modules/html-entities
+2017-09-21T14:28:00.43+0900 [STG/0] OUT        webpack-node-externals@1.6.0 /tmp/app/node_modules/webpack-node-externals
+2017-09-21T14:28:00.43+0900 [STG/0] OUT        path-is-inside@1.0.2 /tmp/app/node_modules/path-is-inside
+2017-09-21T14:28:00.43+0900 [STG/0] OUT        abbrev@1.1.0 /tmp/app/node_modules/abbrev
+2017-09-21T14:28:00.43+0900 [STG/0] OUT        ansi-align@2.0.0 /tmp/app/node_modules/ansi-align
+2017-09-21T14:28:00.43+0900 [STG/0] OUT        array-union@1.0.2 /tmp/app/node_modules/array-union
+2017-09-21T14:28:00.43+0900 [STG/0] OUT        array-uniq@1.0.3 /tmp/app/node_modules/array-uniq
+2017-09-21T14:28:00.43+0900 [STG/0] OUT        arrify@1.0.1 /tmp/app/node_modules/arrify
+2017-09-21T14:28:00.43+0900 [STG/0] OUT        babel-eslint@7.2.3 /tmp/app/node_modules/babel-eslint
+2017-09-21T14:28:00.43+0900 [STG/0] OUT        babel-plugin-syntax-class-properties@6.13.0 /tmp/app/node_modules/babel-plugin-syntax-class-properties
+2017-09-21T14:28:00.43+0900 [STG/0] OUT        babel-plugin-transform-class-properties@6.24.1 /tmp/app/node_modules/babel-plugin-transform-class-properties
+2017-09-21T14:28:00.43+0900 [STG/0] OUT        babel-preset-backpack@0.4.0 /tmp/app/node_modules/babel-preset-backpack
+2017-09-21T14:28:00.43+0900 [STG/0] OUT        caller-path@0.1.0 /tmp/app/node_modules/caller-path
+2017-09-21T14:28:00.43+0900 [STG/0] OUT        callsites@0.2.0 /tmp/app/node_modules/callsites
+2017-09-21T14:28:00.43+0900 [STG/0] OUT        capture-stack-trace@1.0.0 /tmp/app/node_modules/capture-stack-trace
+2017-09-21T14:28:00.43+0900 [STG/0] OUT        circular-json@0.3.3 /tmp/app/node_modules/circular-json
+2017-09-21T14:28:00.43+0900 [STG/0] OUT        cli-boxes@1.0.0 /tmp/app/node_modules/cli-boxes
+2017-09-21T14:28:00.43+0900 [STG/0] OUT        concat-stream@1.6.0 /tmp/app/node_modules/concat-stream
+2017-09-21T14:28:00.43+0900 [STG/0] OUT        typedarray@0.0.6 /tmp/app/node_modules/typedarray
+2017-09-21T14:28:00.43+0900 [STG/0] OUT        configstore@3.1.1 /tmp/app/node_modules/configstore
+2017-09-21T14:28:00.43+0900 [STG/0] OUT        dot-prop@4.2.0 /tmp/app/node_modules/dot-prop
+2017-09-21T14:28:00.43+0900 [STG/0] OUT        is-obj@1.0.1 /tmp/app/node_modules/is-obj
+2017-09-21T14:28:00.43+0900 [STG/0] OUT        unique-string@1.0.0 /tmp/app/node_modules/unique-string
+2017-09-21T14:28:00.43+0900 [STG/0] OUT        crypto-random-string@1.0.0 /tmp/app/node_modules/crypto-random-string
+2017-09-21T14:28:00.43+0900 [STG/0] OUT        write-file-atomic@2.3.0 /tmp/app/node_modules/write-file-atomic
+2017-09-21T14:28:00.43+0900 [STG/0] OUT        imurmurhash@0.1.4 /tmp/app/node_modules/imurmurhash
+2017-09-21T14:28:00.44+0900 [STG/0] OUT        xdg-basedir@3.0.0 /tmp/app/node_modules/xdg-basedir
+2017-09-21T14:28:00.44+0900 [STG/0] OUT        contains-path@0.1.0 /tmp/app/node_modules/contains-path
+2017-09-21T14:28:00.44+0900 [STG/0] OUT        create-error-class@3.0.2 /tmp/app/node_modules/create-error-class
+2017-09-21T14:28:00.44+0900 [STG/0] OUT        deep-extend@0.4.2 /tmp/app/node_modules/deep-extend
+2017-09-21T14:28:00.44+0900 [STG/0] OUT        deep-is@0.1.3 /tmp/app/node_modules/deep-is
+2017-09-21T14:28:00.44+0900 [STG/0] OUT        doctrine@2.0.0 /tmp/app/node_modules/doctrine
+2017-09-21T14:28:00.44+0900 [STG/0] OUT        duplexer3@0.1.4 /tmp/app/node_modules/duplexer3
+2017-09-21T14:28:00.44+0900 [STG/0] OUT        eslint-config-airbnb-base@12.0.0 /tmp/app/node_modules/eslint-config-airbnb-base
+2017-09-21T14:28:00.44+0900 [STG/0] OUT        eslint-restricted-globals@0.1.1 /tmp/app/node_modules/eslint-restricted-globals
+2017-09-21T14:28:00.44+0900 [STG/0] OUT        eslint-config-standard@10.2.1 /tmp/app/node_modules/eslint-config-standard
+2017-09-21T14:28:00.44+0900 [STG/0] OUT        eslint-import-resolver-node@0.3.1 /tmp/app/node_modules/eslint-import-resolver-node
+2017-09-21T14:28:00.44+0900 [STG/0] OUT        eslint-loader@1.9.0 /tmp/app/node_modules/eslint-loader
+2017-09-21T14:28:00.44+0900 [STG/0] OUT        loader-fs-cache@1.0.1 /tmp/app/node_modules/loader-fs-cache
+2017-09-21T14:28:00.44+0900 [STG/0] OUT        find-cache-dir@0.1.1 /tmp/app/node_modules/loader-fs-cache/node_modules/find-cache-dir
+2017-09-21T14:28:00.44+0900 [STG/0] OUT        pkg-dir@1.0.0 /tmp/app/node_modules/loader-fs-cache/node_modules/pkg-dir
+2017-09-21T14:28:00.44+0900 [STG/0] OUT        find-up@1.1.2 /tmp/app/node_modules/loader-fs-cache/node_modules/find-up
+2017-09-21T14:28:00.44+0900 [STG/0] OUT        path-exists@2.1.0 /tmp/app/node_modules/loader-fs-cache/node_modules/path-exists
+2017-09-21T14:28:00.44+0900 [STG/0] OUT        object-hash@1.1.8 /tmp/app/node_modules/object-hash
+2017-09-21T14:28:00.44+0900 [STG/0] OUT        rimraf@2.6.2 /tmp/app/node_modules/rimraf
+2017-09-21T14:28:00.44+0900 [STG/0] OUT        eslint-plugin-promise@3.5.0 /tmp/app/node_modules/eslint-plugin-promise
+2017-09-21T14:28:00.44+0900 [STG/0] OUT        eslint-plugin-standard@3.0.1 /tmp/app/node_modules/eslint-plugin-standard
+2017-09-21T14:28:00.44+0900 [STG/0] OUT        esquery@1.0.0 /tmp/app/node_modules/esquery
+2017-09-21T14:28:00.44+0900 [STG/0] OUT        espree@3.5.1 /tmp/app/node_modules/espree
+2017-09-21T14:28:00.44+0900 [STG/0] OUT        acorn-jsx@3.0.1 /tmp/app/node_modules/acorn-jsx
+2017-09-21T14:28:00.44+0900 [STG/0] OUT        acorn@3.3.0 /tmp/app/node_modules/acorn-jsx/node_modules/acorn
+2017-09-21T14:28:00.44+0900 [STG/0] OUT        eslint-scope@3.7.1 /tmp/app/node_modules/eslint-scope
+2017-09-21T14:28:00.44+0900 [STG/0] OUT        event-stream@3.3.4 /tmp/app/node_modules/event-stream
+2017-09-21T14:28:00.44+0900 [STG/0] OUT        from@0.1.7 /tmp/app/node_modules/from
+2017-09-21T14:28:00.44+0900 [STG/0] OUT        map-stream@0.1.0 /tmp/app/node_modules/map-stream
+2017-09-21T14:28:00.44+0900 [STG/0] OUT        pause-stream@0.0.11 /tmp/app/node_modules/pause-stream
+2017-09-21T14:28:00.44+0900 [STG/0] OUT        split@0.3.3 /tmp/app/node_modules/split
+2017-09-21T14:28:00.44+0900 [STG/0] OUT        stream-combiner@0.0.4 /tmp/app/node_modules/stream-combiner
+2017-09-21T14:28:00.44+0900 [STG/0] OUT        fast-levenshtein@2.0.6 /tmp/app/node_modules/fast-levenshtein
+2017-09-21T14:28:00.44+0900 [STG/0] OUT        file-entry-cache@2.0.0 /tmp/app/node_modules/file-entry-cache
+2017-09-21T14:28:00.44+0900 [STG/0] OUT        flat-cache@1.2.2 /tmp/app/node_modules/flat-cache
+2017-09-21T14:28:00.44+0900 [STG/0] OUT        del@2.2.2 /tmp/app/node_modules/del
+2017-09-21T14:28:00.44+0900 [STG/0] OUT        globby@5.0.0 /tmp/app/node_modules/globby
+2017-09-21T14:28:00.44+0900 [STG/0] OUT        pify@2.3.0 /tmp/app/node_modules/globby/node_modules/pify
+2017-09-21T14:28:00.44+0900 [STG/0] OUT        is-path-cwd@1.0.0 /tmp/app/node_modules/is-path-cwd
+2017-09-21T14:28:00.44+0900 [STG/0] OUT        is-path-in-cwd@1.0.0 /tmp/app/node_modules/is-path-in-cwd
+2017-09-21T14:28:00.44+0900 [STG/0] OUT        is-path-inside@1.0.0 /tmp/app/node_modules/is-path-inside
+2017-09-21T14:28:00.44+0900 [STG/0] OUT        pify@2.3.0 /tmp/app/node_modules/del/node_modules/pify
+2017-09-21T14:28:00.44+0900 [STG/0] OUT        write@0.2.1 /tmp/app/node_modules/write
+2017-09-21T14:28:00.44+0900 [STG/0] OUT        functional-red-black-tree@1.0.1 /tmp/app/node_modules/functional-red-black-tree
+2017-09-21T14:28:00.44+0900 [STG/0] OUT        got@6.7.1 /tmp/app/node_modules/got
+2017-09-21T14:28:00.44+0900 [STG/0] OUT        is-redirect@1.0.0 /tmp/app/node_modules/is-redirect
+2017-09-21T14:28:00.44+0900 [STG/0] OUT        is-retry-allowed@1.1.0 /tmp/app/node_modules/is-retry-allowed
+2017-09-21T14:28:00.44+0900 [STG/0] OUT        lowercase-keys@1.0.0 /tmp/app/node_modules/lowercase-keys
+2017-09-21T14:28:00.44+0900 [STG/0] OUT        timed-out@4.0.1 /tmp/app/node_modules/timed-out
+2017-09-21T14:28:00.44+0900 [STG/0] OUT        unzip-response@2.0.1 /tmp/app/node_modules/unzip-response
+2017-09-21T14:28:00.44+0900 [STG/0] OUT        url-parse-lax@1.0.0 /tmp/app/node_modules/url-parse-lax
+2017-09-21T14:28:00.44+0900 [STG/0] OUT        ignore@3.3.5 /tmp/app/node_modules/ignore
+2017-09-21T14:28:00.44+0900 [STG/0] OUT        ignore-by-default@1.0.1 /tmp/app/node_modules/ignore-by-default
+2017-09-21T14:28:00.44+0900 [STG/0] OUT        import-lazy@2.1.0 /tmp/app/node_modules/import-lazy
+2017-09-21T14:28:00.44+0900 [STG/0] OUT        ini@1.3.4 /tmp/app/node_modules/ini
+2017-09-21T14:28:00.44+0900 [STG/0] OUT        is-npm@1.0.0 /tmp/app/node_modules/is-npm
+2017-09-21T14:28:00.44+0900 [STG/0] OUT        is-resolvable@1.0.0 /tmp/app/node_modules/is-resolvable
+2017-09-21T14:28:00.44+0900 [STG/0] OUT        tryit@1.0.3 /tmp/app/node_modules/tryit
+2017-09-21T14:28:00.44+0900 [STG/0] OUT        latest-version@3.1.0 /tmp/app/node_modules/latest-version
+2017-09-21T14:28:00.44+0900 [STG/0] OUT        package-json@4.0.1 /tmp/app/node_modules/package-json
+2017-09-21T14:28:00.44+0900 [STG/0] OUT        registry-auth-token@3.3.1 /tmp/app/node_modules/registry-auth-token
+2017-09-21T14:28:00.44+0900 [STG/0] OUT        rc@1.2.1 /tmp/app/node_modules/rc
+2017-09-21T14:28:00.44+0900 [STG/0] OUT        strip-json-comments@2.0.1 /tmp/app/node_modules/strip-json-comments
+2017-09-21T14:28:00.44+0900 [STG/0] OUT        registry-url@3.1.0 /tmp/app/node_modules/registry-url
+2017-09-21T14:28:00.44+0900 [STG/0] OUT        levn@0.3.0 /tmp/app/node_modules/levn
+2017-09-21T14:28:00.44+0900 [STG/0] OUT        prelude-ls@1.1.2 /tmp/app/node_modules/prelude-ls
+2017-09-21T14:28:00.44+0900 [STG/0] OUT        type-check@0.3.2 /tmp/app/node_modules/type-check
+2017-09-21T14:28:00.44+0900 [STG/0] OUT        lodash._baseassign@3.2.0 /tmp/app/node_modules/lodash._baseassign
+2017-09-21T14:28:00.44+0900 [STG/0] OUT        lodash._basecopy@3.0.1 /tmp/app/node_modules/lodash._basecopy
+2017-09-21T14:28:00.44+0900 [STG/0] OUT        lodash.keys@3.1.2 /tmp/app/node_modules/lodash.keys
+2017-09-21T14:28:00.44+0900 [STG/0] OUT        lodash._getnative@3.9.1 /tmp/app/node_modules/lodash._getnative
+2017-09-21T14:28:00.44+0900 [STG/0] OUT        lodash.isarguments@3.1.0 /tmp/app/node_modules/lodash.isarguments
+2017-09-21T14:28:00.44+0900 [STG/0] OUT        lodash.isarray@3.0.4 /tmp/app/node_modules/lodash.isarray
+2017-09-21T14:28:00.44+0900 [STG/0] OUT        lodash._bindcallback@3.0.1 /tmp/app/node_modules/lodash._bindcallback
+2017-09-21T14:28:00.44+0900 [STG/0] OUT        lodash._createassigner@3.1.1 /tmp/app/node_modules/lodash._createassigner
+2017-09-21T14:28:00.44+0900 [STG/0] OUT        lodash._isiterateecall@3.0.9 /tmp/app/node_modules/lodash._isiterateecall
+2017-09-21T14:28:00.44+0900 [STG/0] OUT        lodash.restparam@3.6.1 /tmp/app/node_modules/lodash.restparam
+2017-09-21T14:28:00.44+0900 [STG/0] OUT        lodash.assign@3.2.0 /tmp/app/node_modules/lodash.assign
+2017-09-21T14:28:00.44+0900 [STG/0] OUT        lodash.defaults@3.1.2 /tmp/app/node_modules/lodash.defaults
+2017-09-21T14:28:00.44+0900 [STG/0] OUT        lodash.cond@4.5.2 /tmp/app/node_modules/lodash.cond
+2017-09-21T14:28:00.44+0900 [STG/0] OUT        nan@2.7.0 /tmp/app/node_modules/nan
+2017-09-21T14:28:00.44+0900 [STG/0] OUT        natural-compare@1.4.0 /tmp/app/node_modules/natural-compare
+2017-09-21T14:28:00.44+0900 [STG/0] OUT        pluralize@7.0.0 /tmp/app/node_modules/pluralize
+2017-09-21T14:28:00.44+0900 [STG/0] OUT        ps-tree@1.1.0 /tmp/app/node_modules/ps-tree
+2017-09-21T14:28:00.44+0900 [STG/0] OUT        ramda@0.23.0 /tmp/app/node_modules/ramda
+2017-09-21T14:28:00.44+0900 [STG/0] OUT        require-uncached@1.0.3 /tmp/app/node_modules/require-uncached
+2017-09-21T14:28:00.44+0900 [STG/0] OUT        resolve-from@1.0.1 /tmp/app/node_modules/resolve-from
+2017-09-21T14:28:00.45+0900 [STG/0] OUT        semver-diff@2.1.0 /tmp/app/node_modules/semver-diff
+2017-09-21T14:28:00.45+0900 [STG/0] OUT        slice-ansi@0.0.4 /tmp/app/node_modules/slice-ansi
+2017-09-21T14:28:00.45+0900 [STG/0] OUT        term-size@1.2.0 /tmp/app/node_modules/term-size
+2017-09-21T14:28:00.45+0900 [STG/0] OUT        text-table@0.2.0 /tmp/app/node_modules/text-table
+2017-09-21T14:28:00.45+0900 [STG/0] OUT        uglify-to-browserify@1.0.2 /tmp/app/node_modules/uglify-to-browserify
+2017-09-21T14:28:00.45+0900 [STG/0] OUT        undefsafe@0.0.3 /tmp/app/node_modules/undefsafe
+2017-09-21T14:28:00.45+0900 [STG/0] OUT        backpack-core@0.4.2 /tmp/app/node_modules/backpack-core
+2017-09-21T14:28:00.45+0900 [STG/0] OUT        nodemon@1.12.1 /tmp/app/node_modules/nodemon
+2017-09-21T14:28:00.45+0900 [STG/0] OUT        es6-promise@3.3.1 /tmp/app/node_modules/nodemon/node_modules/es6-promise
+2017-09-21T14:28:00.45+0900 [STG/0] OUT        touch@3.1.0 /tmp/app/node_modules/touch
+2017-09-21T14:28:00.45+0900 [STG/0] OUT        nopt@1.0.10 /tmp/app/node_modules/nopt
+2017-09-21T14:28:00.45+0900 [STG/0] OUT        update-notifier@2.2.0 /tmp/app/node_modules/update-notifier
+2017-09-21T14:28:00.45+0900 [STG/0] OUT        boxen@1.2.1 /tmp/app/node_modules/boxen
+2017-09-21T14:28:00.45+0900 [STG/0] OUT        camelcase@4.1.0 /tmp/app/node_modules/boxen/node_modules/camelcase
+2017-09-21T14:28:00.45+0900 [STG/0] OUT        widest-line@1.0.0 /tmp/app/node_modules/widest-line
+2017-09-21T14:28:00.45+0900 [STG/0] OUT        string-width@1.0.2 /tmp/app/node_modules/widest-line/node_modules/string-width
+2017-09-21T14:28:00.45+0900 [STG/0] OUT        is-fullwidth-code-point@1.0.0 /tmp/app/node_modules/widest-line/node_modules/is-fullwidth-code-point
+2017-09-21T14:28:00.45+0900 [STG/0] OUT        chalk@1.1.3 /tmp/app/node_modules/update-notifier/node_modules/chalk
+2017-09-21T14:28:00.45+0900 [STG/0] OUT        ansi-styles@2.2.1 /tmp/app/node_modules/update-notifier/node_modules/ansi-styles
+2017-09-21T14:28:00.45+0900 [STG/0] OUT        supports-color@2.0.0 /tmp/app/node_modules/update-notifier/node_modules/supports-color
+2017-09-21T14:28:00.45+0900 [STG/0] OUT        eslint-module-utils@2.1.1 /tmp/app/node_modules/eslint-module-utils
+2017-09-21T14:28:00.45+0900 [STG/0] OUT        pkg-dir@1.0.0 /tmp/app/node_modules/eslint-module-utils/node_modules/pkg-dir
+2017-09-21T14:28:00.45+0900 [STG/0] OUT        find-up@1.1.2 /tmp/app/node_modules/eslint-module-utils/node_modules/find-up
+2017-09-21T14:28:00.45+0900 [STG/0] OUT        path-exists@2.1.0 /tmp/app/node_modules/eslint-module-utils/node_modules/path-exists
+2017-09-21T14:28:00.45+0900 [STG/0] OUT        eslint-plugin-import@2.7.0 /tmp/app/node_modules/eslint-plugin-import
+2017-09-21T14:28:00.45+0900 [STG/0] OUT        doctrine@1.5.0 /tmp/app/node_modules/eslint-plugin-import/node_modules/doctrine
+2017-09-21T14:28:00.45+0900 [STG/0] OUT        eslint-plugin-html@3.2.2 /tmp/app/node_modules/eslint-plugin-html
+2017-09-21T14:28:00.45+0900 [STG/0] OUT        htmlparser2@3.9.2 /tmp/app/node_modules/eslint-plugin-html/node_modules/htmlparser2
+2017-09-21T14:28:00.45+0900 [STG/0] OUT        domhandler@2.4.1 /tmp/app/node_modules/eslint-plugin-html/node_modules/domhandler
+2017-09-21T14:28:00.45+0900 [STG/0] OUT        optionator@0.8.2 /tmp/app/node_modules/optionator
+2017-09-21T14:28:00.45+0900 [STG/0] OUT        wordwrap@1.0.0 /tmp/app/node_modules/optionator/node_modules/wordwrap
+2017-09-21T14:28:00.45+0900 [STG/0] OUT        table@4.0.1 /tmp/app/node_modules/table
+2017-09-21T14:28:00.45+0900 [STG/0] OUT        ajv@4.11.8 /tmp/app/node_modules/table/node_modules/ajv
+2017-09-21T14:28:00.45+0900 [STG/0] OUT        ajv-keywords@1.5.1 /tmp/app/node_modules/table/node_modules/ajv-keywords
+2017-09-21T14:28:00.45+0900 [STG/0] OUT        chalk@1.1.3 /tmp/app/node_modules/table/node_modules/chalk
+2017-09-21T14:28:00.45+0900 [STG/0] OUT        ansi-styles@2.2.1 /tmp/app/node_modules/table/node_modules/ansi-styles
+2017-09-21T14:28:00.45+0900 [STG/0] OUT        supports-color@2.0.0 /tmp/app/node_modules/table/node_modules/supports-color
+2017-09-21T14:28:00.45+0900 [STG/0] OUT        eslint-plugin-node@5.1.1 /tmp/app/node_modules/eslint-plugin-node
+2017-09-21T14:28:00.45+0900 [STG/0] OUT        semver@5.3.0 /tmp/app/node_modules/eslint-plugin-node/node_modules/semver
+2017-09-21T14:28:00.45+0900 [STG/0] OUT        eslint@4.7.1 /tmp/app/node_modules/eslint
+2017-09-21T14:28:00.45+0900 [STG/0] OUT        debug@3.0.1 /tmp/app/node_modules/eslint/node_modules/debug
+2017-09-21T14:28:00.45+0900 [STG/0] OUT        js-yaml@3.10.0 /tmp/app/node_modules/eslint/node_modules/js-yaml
+2017-09-21T14:28:00.45+0900 [STG/0] OUT        esprima@4.0.0 /tmp/app/node_modules/eslint/node_modules/esprima
+2017-09-21T14:28:00.45+0900 [STG/0] OUT        progress@2.0.0 /tmp/app/node_modules/eslint/node_modules/progress
+2017-09-21T14:28:00.45+0900 [STG/0] OUT        strip-ansi@4.0.0 /tmp/app/node_modules/eslint/node_modules/strip-ansi
+2017-09-21T14:28:00.45+0900 [STG/0] OUT        ansi-regex@3.0.0 /tmp/app/node_modules/eslint/node_modules/ansi-regex
+2017-09-21T14:28:00.45+0900 [STG/0] OUT        fsevents@1.1.2 /tmp/app/node_modules/fsevents
+2017-09-21T14:28:00.45+0900 [STG/0] OUT        node-pre-gyp@0.6.36 /tmp/app/node_modules/fsevents/node_modules/node-pre-gyp
+2017-09-21T14:28:00.45+0900 [STG/0] OUT        mkdirp@0.5.1 /tmp/app/node_modules/fsevents/node_modules/mkdirp
+2017-09-21T14:28:00.45+0900 [STG/0] OUT        minimist@0.0.8 /tmp/app/node_modules/fsevents/node_modules/minimist
+2017-09-21T14:28:00.45+0900 [STG/0] OUT        nopt@4.0.1 /tmp/app/node_modules/fsevents/node_modules/nopt
+2017-09-21T14:28:00.45+0900 [STG/0] OUT        abbrev@1.1.0 /tmp/app/node_modules/fsevents/node_modules/abbrev
+2017-09-21T14:28:00.45+0900 [STG/0] OUT        osenv@0.1.4 /tmp/app/node_modules/fsevents/node_modules/osenv
+2017-09-21T14:28:00.45+0900 [STG/0] OUT        os-homedir@1.0.2 /tmp/app/node_modules/fsevents/node_modules/os-homedir
+2017-09-21T14:28:00.45+0900 [STG/0] OUT        os-tmpdir@1.0.2 /tmp/app/node_modules/fsevents/node_modules/os-tmpdir
+2017-09-21T14:28:00.45+0900 [STG/0] OUT        npmlog@4.1.0 /tmp/app/node_modules/fsevents/node_modules/npmlog
+2017-09-21T14:28:00.45+0900 [STG/0] OUT        are-we-there-yet@1.1.4 /tmp/app/node_modules/fsevents/node_modules/are-we-there-yet
+2017-09-21T14:28:00.45+0900 [STG/0] OUT        delegates@1.0.0 /tmp/app/node_modules/fsevents/node_modules/delegates
+2017-09-21T14:28:00.45+0900 [STG/0] OUT        readable-stream@2.2.9 /tmp/app/node_modules/fsevents/node_modules/readable-stream
+2017-09-21T14:28:00.45+0900 [STG/0] OUT        buffer-shims@1.0.0 /tmp/app/node_modules/fsevents/node_modules/buffer-shims
+2017-09-21T14:28:00.45+0900 [STG/0] OUT        core-util-is@1.0.2 /tmp/app/node_modules/fsevents/node_modules/core-util-is
+2017-09-21T14:28:00.45+0900 [STG/0] OUT        inherits@2.0.3 /tmp/app/node_modules/fsevents/node_modules/inherits
+2017-09-21T14:28:00.45+0900 [STG/0] OUT        isarray@1.0.0 /tmp/app/node_modules/fsevents/node_modules/isarray
+2017-09-21T14:28:00.45+0900 [STG/0] OUT        process-nextick-args@1.0.7 /tmp/app/node_modules/fsevents/node_modules/process-nextick-args
+2017-09-21T14:28:00.45+0900 [STG/0] OUT        string_decoder@1.0.1 /tmp/app/node_modules/fsevents/node_modules/string_decoder
+2017-09-21T14:28:00.45+0900 [STG/0] OUT        safe-buffer@5.0.1 /tmp/app/node_modules/fsevents/node_modules/safe-buffer
+2017-09-21T14:28:00.45+0900 [STG/0] OUT        util-deprecate@1.0.2 /tmp/app/node_modules/fsevents/node_modules/util-deprecate
+2017-09-21T14:28:00.45+0900 [STG/0] OUT        console-control-strings@1.1.0 /tmp/app/node_modules/fsevents/node_modules/console-control-strings
+2017-09-21T14:28:00.45+0900 [STG/0] OUT        gauge@2.7.4 /tmp/app/node_modules/fsevents/node_modules/gauge
+2017-09-21T14:28:00.45+0900 [STG/0] OUT        aproba@1.1.1 /tmp/app/node_modules/fsevents/node_modules/aproba
+2017-09-21T14:28:00.45+0900 [STG/0] OUT        has-unicode@2.0.1 /tmp/app/node_modules/fsevents/node_modules/has-unicode
+2017-09-21T14:28:00.46+0900 [STG/0] OUT        object-assign@4.1.1 /tmp/app/node_modules/fsevents/node_modules/object-assign
+2017-09-21T14:28:00.46+0900 [STG/0] OUT        signal-exit@3.0.2 /tmp/app/node_modules/fsevents/node_modules/signal-exit
+2017-09-21T14:28:00.46+0900 [STG/0] OUT        string-width@1.0.2 /tmp/app/node_modules/fsevents/node_modules/string-width
+2017-09-21T14:28:00.46+0900 [STG/0] OUT        code-point-at@1.1.0 /tmp/app/node_modules/fsevents/node_modules/code-point-at
+2017-09-21T14:28:00.46+0900 [STG/0] OUT        is-fullwidth-code-point@1.0.0 /tmp/app/node_modules/fsevents/node_modules/is-fullwidth-code-point
+2017-09-21T14:28:00.46+0900 [STG/0] OUT        number-is-nan@1.0.1 /tmp/app/node_modules/fsevents/node_modules/number-is-nan
+2017-09-21T14:28:00.46+0900 [STG/0] OUT        strip-ansi@3.0.1 /tmp/app/node_modules/fsevents/node_modules/strip-ansi
+2017-09-21T14:28:00.46+0900 [STG/0] OUT        ansi-regex@2.1.1 /tmp/app/node_modules/fsevents/node_modules/ansi-regex
+2017-09-21T14:28:00.46+0900 [STG/0] OUT        wide-align@1.1.2 /tmp/app/node_modules/fsevents/node_modules/wide-align
+2017-09-21T14:28:00.46+0900 [STG/0] OUT        set-blocking@2.0.0 /tmp/app/node_modules/fsevents/node_modules/set-blocking
+2017-09-21T14:28:00.46+0900 [STG/0] OUT        rc@1.2.1 /tmp/app/node_modules/fsevents/node_modules/rc
+2017-09-21T14:28:00.46+0900 [STG/0] OUT        deep-extend@0.4.2 /tmp/app/node_modules/fsevents/node_modules/deep-extend
+2017-09-21T14:28:00.46+0900 [STG/0] OUT        ini@1.3.4 /tmp/app/node_modules/fsevents/node_modules/ini
+2017-09-21T14:28:00.46+0900 [STG/0] OUT        minimist@1.2.0 /tmp/app/node_modules/fsevents/node_modules/rc/node_modules/minimist
+2017-09-21T14:28:00.46+0900 [STG/0] OUT        strip-json-comments@2.0.1 /tmp/app/node_modules/fsevents/node_modules/strip-json-comments
+2017-09-21T14:28:00.46+0900 [STG/0] OUT        request@2.81.0 /tmp/app/node_modules/fsevents/node_modules/request
+2017-09-21T14:28:00.46+0900 [STG/0] OUT        aws-sign2@0.6.0 /tmp/app/node_modules/fsevents/node_modules/aws-sign2
+2017-09-21T14:28:00.46+0900 [STG/0] OUT        aws4@1.6.0 /tmp/app/node_modules/fsevents/node_modules/aws4
+2017-09-21T14:28:00.46+0900 [STG/0] OUT        caseless@0.12.0 /tmp/app/node_modules/fsevents/node_modules/caseless
+2017-09-21T14:28:00.46+0900 [STG/0] OUT        combined-stream@1.0.5 /tmp/app/node_modules/fsevents/node_modules/combined-stream
+2017-09-21T14:28:00.46+0900 [STG/0] OUT        delayed-stream@1.0.0 /tmp/app/node_modules/fsevents/node_modules/delayed-stream
+2017-09-21T14:28:00.46+0900 [STG/0] OUT        extend@3.0.1 /tmp/app/node_modules/fsevents/node_modules/extend
+2017-09-21T14:28:00.46+0900 [STG/0] OUT        forever-agent@0.6.1 /tmp/app/node_modules/fsevents/node_modules/forever-agent
+2017-09-21T14:28:00.46+0900 [STG/0] OUT        form-data@2.1.4 /tmp/app/node_modules/fsevents/node_modules/form-data
+2017-09-21T14:28:00.46+0900 [STG/0] OUT        asynckit@0.4.0 /tmp/app/node_modules/fsevents/node_modules/asynckit
+2017-09-21T14:28:00.46+0900 [STG/0] OUT        mime-types@2.1.15 /tmp/app/node_modules/fsevents/node_modules/mime-types
+2017-09-21T14:28:00.46+0900 [STG/0] OUT        mime-db@1.27.0 /tmp/app/node_modules/fsevents/node_modules/mime-db
+2017-09-21T14:28:00.46+0900 [STG/0] OUT        har-validator@4.2.1 /tmp/app/node_modules/fsevents/node_modules/har-validator
+2017-09-21T14:28:00.46+0900 [STG/0] OUT        ajv@4.11.8 /tmp/app/node_modules/fsevents/node_modules/ajv
+2017-09-21T14:28:00.46+0900 [STG/0] OUT        co@4.6.0 /tmp/app/node_modules/fsevents/node_modules/co
+2017-09-21T14:28:00.46+0900 [STG/0] OUT        json-stable-stringify@1.0.1 /tmp/app/node_modules/fsevents/node_modules/json-stable-stringify
+2017-09-21T14:28:00.46+0900 [STG/0] OUT        jsonify@0.0.0 /tmp/app/node_modules/fsevents/node_modules/jsonify
+2017-09-21T14:28:00.46+0900 [STG/0] OUT        har-schema@1.0.5 /tmp/app/node_modules/fsevents/node_modules/har-schema
+2017-09-21T14:28:00.46+0900 [STG/0] OUT        hawk@3.1.3 /tmp/app/node_modules/fsevents/node_modules/hawk
+2017-09-21T14:28:00.46+0900 [STG/0] OUT        boom@2.10.1 /tmp/app/node_modules/fsevents/node_modules/boom
+2017-09-21T14:28:00.46+0900 [STG/0] OUT        hoek@2.16.3 /tmp/app/node_modules/fsevents/node_modules/hoek
+2017-09-21T14:28:00.46+0900 [STG/0] OUT        cryptiles@2.0.5 /tmp/app/node_modules/fsevents/node_modules/cryptiles
+2017-09-21T14:28:00.46+0900 [STG/0] OUT        sntp@1.0.9 /tmp/app/node_modules/fsevents/node_modules/sntp
+2017-09-21T14:28:00.46+0900 [STG/0] OUT        http-signature@1.1.1 /tmp/app/node_modules/fsevents/node_modules/http-signature
+2017-09-21T14:28:00.46+0900 [STG/0] OUT        assert-plus@0.2.0 /tmp/app/node_modules/fsevents/node_modules/assert-plus
+2017-09-21T14:28:00.46+0900 [STG/0] OUT        jsprim@1.4.0 /tmp/app/node_modules/fsevents/node_modules/jsprim
+2017-09-21T14:28:00.46+0900 [STG/0] OUT        assert-plus@1.0.0 /tmp/app/node_modules/fsevents/node_modules/jsprim/node_modules/assert-plus
+2017-09-21T14:28:00.46+0900 [STG/0] OUT        extsprintf@1.0.2 /tmp/app/node_modules/fsevents/node_modules/extsprintf
+2017-09-21T14:28:00.46+0900 [STG/0] OUT        json-schema@0.2.3 /tmp/app/node_modules/fsevents/node_modules/json-schema
+2017-09-21T14:28:00.47+0900 [STG/0] OUT        verror@1.3.6 /tmp/app/node_modules/fsevents/node_modules/verror
+2017-09-21T14:28:00.47+0900 [STG/0] OUT        sshpk@1.13.0 /tmp/app/node_modules/fsevents/node_modules/sshpk
+2017-09-21T14:28:00.47+0900 [STG/0] OUT        asn1@0.2.3 /tmp/app/node_modules/fsevents/node_modules/asn1
+2017-09-21T14:28:00.47+0900 [STG/0] OUT        assert-plus@1.0.0 /tmp/app/node_modules/fsevents/node_modules/sshpk/node_modules/assert-plus
+2017-09-21T14:28:00.47+0900 [STG/0] OUT        dashdash@1.14.1 /tmp/app/node_modules/fsevents/node_modules/dashdash
+2017-09-21T14:28:00.47+0900 [STG/0] OUT        assert-plus@1.0.0 /tmp/app/node_modules/fsevents/node_modules/dashdash/node_modules/assert-plus
+2017-09-21T14:28:00.47+0900 [STG/0] OUT        getpass@0.1.7 /tmp/app/node_modules/fsevents/node_modules/getpass
+2017-09-21T14:28:00.47+0900 [STG/0] OUT        assert-plus@1.0.0 /tmp/app/node_modules/fsevents/node_modules/getpass/node_modules/assert-plus
+2017-09-21T14:28:00.47+0900 [STG/0] OUT        is-typedarray@1.0.0 /tmp/app/node_modules/fsevents/node_modules/is-typedarray
+2017-09-21T14:28:00.47+0900 [STG/0] OUT        isstream@0.1.2 /tmp/app/node_modules/fsevents/node_modules/isstream
+2017-09-21T14:28:00.47+0900 [STG/0] OUT        json-stringify-safe@5.0.1 /tmp/app/node_modules/fsevents/node_modules/json-stringify-safe
+2017-09-21T14:28:00.47+0900 [STG/0] OUT        oauth-sign@0.8.2 /tmp/app/node_modules/fsevents/node_modules/oauth-sign
+2017-09-21T14:28:00.47+0900 [STG/0] OUT        performance-now@0.2.0 /tmp/app/node_modules/fsevents/node_modules/performance-now
+2017-09-21T14:28:00.47+0900 [STG/0] OUT        qs@6.4.0 /tmp/app/node_modules/fsevents/node_modules/qs
+2017-09-21T14:28:00.47+0900 [STG/0] OUT        stringstream@0.0.5 /tmp/app/node_modules/fsevents/node_modules/stringstream
+2017-09-21T14:28:00.47+0900 [STG/0] OUT        tough-cookie@2.3.2 /tmp/app/node_modules/fsevents/node_modules/tough-cookie
+2017-09-21T14:28:00.47+0900 [STG/0] OUT        punycode@1.4.1 /tmp/app/node_modules/fsevents/node_modules/punycode
+2017-09-21T14:28:00.47+0900 [STG/0] OUT        tunnel-agent@0.6.0 /tmp/app/node_modules/fsevents/node_modules/tunnel-agent
+2017-09-21T14:28:00.47+0900 [STG/0] OUT        uuid@3.0.1 /tmp/app/node_modules/fsevents/node_modules/uuid
+2017-09-21T14:28:00.47+0900 [STG/0] OUT        rimraf@2.6.1 /tmp/app/node_modules/fsevents/node_modules/rimraf
+2017-09-21T14:28:00.47+0900 [STG/0] OUT        glob@7.1.2 /tmp/app/node_modules/fsevents/node_modules/glob
+2017-09-21T14:28:00.47+0900 [STG/0] OUT        fs.realpath@1.0.0 /tmp/app/node_modules/fsevents/node_modules/fs.realpath
+2017-09-21T14:28:00.47+0900 [STG/0] OUT        inflight@1.0.6 /tmp/app/node_modules/fsevents/node_modules/inflight
+2017-09-21T14:28:00.47+0900 [STG/0] OUT        once@1.4.0 /tmp/app/node_modules/fsevents/node_modules/once
+2017-09-21T14:28:00.47+0900 [STG/0] OUT        wrappy@1.0.2 /tmp/app/node_modules/fsevents/node_modules/wrappy
+2017-09-21T14:28:00.47+0900 [STG/0] OUT        minimatch@3.0.4 /tmp/app/node_modules/fsevents/node_modules/minimatch
+2017-09-21T14:28:00.47+0900 [STG/0] OUT        brace-expansion@1.1.7 /tmp/app/node_modules/fsevents/node_modules/brace-expansion
+2017-09-21T14:28:00.47+0900 [STG/0] OUT        balanced-match@0.4.2 /tmp/app/node_modules/fsevents/node_modules/balanced-match
+2017-09-21T14:28:00.47+0900 [STG/0] OUT        concat-map@0.0.1 /tmp/app/node_modules/fsevents/node_modules/concat-map
+2017-09-21T14:28:00.47+0900 [STG/0] OUT        path-is-absolute@1.0.1 /tmp/app/node_modules/fsevents/node_modules/path-is-absolute
+2017-09-21T14:28:00.47+0900 [STG/0] OUT        semver@5.3.0 /tmp/app/node_modules/fsevents/node_modules/semver
+2017-09-21T14:28:00.47+0900 [STG/0] OUT        tar@2.2.1 /tmp/app/node_modules/fsevents/node_modules/tar
+2017-09-21T14:28:00.47+0900 [STG/0] OUT        block-stream@0.0.9 /tmp/app/node_modules/fsevents/node_modules/block-stream
+2017-09-21T14:28:00.47+0900 [STG/0] OUT        fstream@1.0.11 /tmp/app/node_modules/fsevents/node_modules/fstream
+2017-09-21T14:28:00.47+0900 [STG/0] OUT        graceful-fs@4.1.11 /tmp/app/node_modules/fsevents/node_modules/graceful-fs
+2017-09-21T14:28:00.47+0900 [STG/0] OUT        tar-pack@3.4.0 /tmp/app/node_modules/fsevents/node_modules/tar-pack
+2017-09-21T14:28:00.47+0900 [STG/0] OUT        debug@2.6.8 /tmp/app/node_modules/fsevents/node_modules/debug
+2017-09-21T14:28:00.47+0900 [STG/0] OUT        ms@2.0.0 /tmp/app/node_modules/fsevents/node_modules/ms
+2017-09-21T14:28:00.47+0900 [STG/0] OUT        fstream-ignore@1.0.5 /tmp/app/node_modules/fsevents/node_modules/fstream-ignore
+2017-09-21T14:28:00.47+0900 [STG/0] OUT        uid-number@0.0.6 /tmp/app/node_modules/fsevents/node_modules/uid-number
+2017-09-21T14:28:00.47+0900 [STG/0] OUT        bcrypt-pbkdf@1.0.1 /tmp/app/node_modules/fsevents/node_modules/bcrypt-pbkdf
+2017-09-21T14:28:00.47+0900 [STG/0] OUT        tweetnacl@0.14.5 /tmp/app/node_modules/fsevents/node_modules/tweetnacl
+2017-09-21T14:28:00.47+0900 [STG/0] OUT        ecc-jsbn@0.1.1 /tmp/app/node_modules/fsevents/node_modules/ecc-jsbn
+2017-09-21T14:28:00.47+0900 [STG/0] OUT        jsbn@0.1.1 /tmp/app/node_modules/fsevents/node_modules/jsbn
+2017-09-21T14:28:00.47+0900 [STG/0] OUT        jodid25519@1.0.2 /tmp/app/node_modules/fsevents/node_modules/jodid25519
+2017-09-21T14:28:00.47+0900 [STG/0] OUT        Installing any new modules (package.json)
+2017-09-21T14:28:13.48+0900 [STG/0] OUT -----> Installing App Management
+2017-09-21T14:28:18.32+0900 [STG/0] OUT -----> Caching build
+2017-09-21T14:28:18.32+0900 [STG/0] OUT        Clearing previous node cache
+2017-09-21T14:28:18.33+0900 [STG/0] OUT        Saving 2 cacheDirectories (default):
+2017-09-21T14:28:18.33+0900 [STG/0] OUT        - node_modules
+2017-09-21T14:28:29.30+0900 [STG/0] OUT        - bower_components (nothing to cache)
+2017-09-21T14:28:29.93+0900 [STG/0] OUT -----> Build succeeded!
+2017-09-21T14:28:36.90+0900 [STG/0] OUT        ├── axios@0.16.2
+2017-09-21T14:28:36.90+0900 [STG/0] OUT        ├── cross-env@5.0.5
+2017-09-21T14:28:36.90+0900 [STG/0] OUT        ├── express@4.15.4
+2017-09-21T14:28:36.90+0900 [STG/0] OUT        ├── nuxt@1.0.0-rc9
+2017-09-21T14:28:36.90+0900 [STG/0] OUT        └── source-map-support@0.4.18
+2017-09-21T14:28:36.90+0900 [STG/0] OUT        
+2017-09-21T14:29:16.01+0900 [STG/0] OUT Exit status 0
+2017-09-21T14:29:16.01+0900 [STG/0] OUT Staging complete
+2017-09-21T14:29:16.01+0900 [STG/0] OUT Uploading droplet, build artifacts cache...
+2017-09-21T14:29:16.01+0900 [STG/0] OUT Uploading build artifacts cache...
+2017-09-21T14:29:16.01+0900 [STG/0] OUT Uploading droplet...
+2017-09-21T14:29:18.17+0900 [STG/0] OUT Uploaded build artifacts cache (23.2M)
+2017-09-21T14:29:24.03+0900 [STG/0] OUT Uploaded droplet (42.2M)
+2017-09-21T14:29:24.05+0900 [STG/0] OUT Uploading complete
+2017-09-21T14:29:24.45+0900 [STG/0] OUT Destroying container
+2017-09-21T14:29:25.61+0900 [CELL/0] OUT Creating container
+2017-09-21T14:29:28.40+0900 [CELL/0] OUT Successfully created container
+2017-09-21T14:29:28.63+0900 [STG/0] OUT Successfully destroyed container
+2017-09-21T14:29:44.32+0900 [CELL/0] OUT Starting health monitoring of container
+2017-09-21T14:29:46.23+0900 [APP/PROC/WEB/0] OUT > vue-on-express@1.0.0 start /home/vcap/app
+2017-09-21T14:29:46.23+0900 [APP/PROC/WEB/0] OUT > cross-env NODE_ENV=production node build/main.js
+2017-09-21T14:29:48.44+0900 [APP/PROC/WEB/0] OUT Server listening on 127.0.0.1:8080
+2017-09-21T14:29:58.22+0900 [APP/PROC/WEB/0] OUT Exit status 0
+2017-09-21T14:29:58.25+0900 [CELL/0] OUT Exit status 0
+2017-09-21T14:29:58.38+0900 [API/7] OUT Process has crashed with type: "web"
+2017-09-21T14:29:58.38+0900 [CELL/0] OUT Destroying container
+2017-09-21T14:29:58.40+0900 [API/7] OUT App instance exited with guid 02c6aa9a-26a7-4108-a4be-e697fbc9dc55 payload: {"instance"=>"d961eeb1-e596-4ed2-4ae1-8e40", "index"=>0, "reason"=>"CRASHED", "exit_description"=>"2 error(s) occurred:\n\n* 2 error(s) occurred:\n\n* Codependent step exited\n* cancelled\n* cancelled", "crash_count"=>1, "crash_timestamp"=>1505971798283240519, "version"=>"241fc5c1-150c-44f5-bd9a-e36fb807b782"}
+2017-09-21T14:29:59.15+0900 [CELL/0] OUT Creating container
+2017-09-21T14:30:00.20+0900 [CELL/0] OUT Successfully destroyed container
+2017-09-21T14:30:04.38+0900 [CELL/0] OUT Successfully created container
+2017-09-21T14:30:22.73+0900 [CELL/0] OUT Starting health monitoring of container
+2017-09-21T14:30:27.50+0900 [APP/PROC/WEB/0] OUT > vue-on-express@1.0.0 start /home/vcap/app
+2017-09-21T14:30:27.50+0900 [APP/PROC/WEB/0] OUT > cross-env NODE_ENV=production node build/main.js
+2017-09-21T14:30:33.20+0900 [APP/PROC/WEB/0] OUT Server listening on 127.0.0.1:8080
+2017-09-21T14:31:00.24+0900 [APP/PROC/WEB/0] OUT Exit status 0
+2017-09-21T14:31:00.29+0900 [CELL/0] OUT Exit status 0
+2017-09-21T14:31:00.38+0900 [CELL/0] OUT Destroying container
+2017-09-21T14:31:00.42+0900 [API/1] OUT Process has crashed with type: "web"
+2017-09-21T14:31:00.44+0900 [API/1] OUT App instance exited with guid 02c6aa9a-26a7-4108-a4be-e697fbc9dc55 payload: {"instance"=>"5ea4e8d0-bf2e-4b65-6526-c089", "index"=>0, "reason"=>"CRASHED", "exit_description"=>"2 error(s) occurred:\n\n* 2 error(s) occurred:\n\n* Codependent step exited\n* cancelled\n* cancelled", "crash_count"=>2, "crash_timestamp"=>1505971860312078480, "version"=>"241fc5c1-150c-44f5-bd9a-e36fb807b782"}
+2017-09-21T14:31:01.16+0900 [CELL/0] OUT Creating container
+2017-09-21T14:31:03.71+0900 [CELL/0] OUT Successfully created container
+2017-09-21T14:31:03.84+0900 [CELL/0] OUT Successfully destroyed container
+2017-09-21T14:31:11.09+0900 [CELL/0] OUT Starting health monitoring of container
+2017-09-21T14:31:13.24+0900 [APP/PROC/WEB/0] OUT > vue-on-express@1.0.0 start /home/vcap/app
+2017-09-21T14:31:13.24+0900 [APP/PROC/WEB/0] OUT > cross-env NODE_ENV=production node build/main.js
+2017-09-21T14:31:15.52+0900 [APP/PROC/WEB/0] OUT Server listening on 127.0.0.1:8080
+2017-09-21T14:31:28.61+0900 [APP/PROC/WEB/0] OUT Exit status 0
+2017-09-21T14:31:28.62+0900 [CELL/0] OUT Exit status 0
+2017-09-21T14:31:28.68+0900 [CELL/0] OUT Destroying container
+2017-09-21T14:31:28.69+0900 [API/4] OUT Process has crashed with type: "web"
+2017-09-21T14:31:28.71+0900 [API/4] OUT App instance exited with guid 02c6aa9a-26a7-4108-a4be-e697fbc9dc55 payload: {"instance"=>"d15e79d1-eb02-4086-7f19-d53a", "index"=>0, "reason"=>"CRASHED", "exit_description"=>"2 error(s) occurred:\n\n* 2 error(s) occurred:\n\n* Codependent step exited\n* cancelled\n* 1 error(s) occurred:\n\n* cancelled", "crash_count"=>3, "crash_timestamp"=>1505971888656851681, "version"=>"241fc5c1-150c-44f5-bd9a-e36fb807b782"}
+2017-09-21T14:31:30.76+0900 [CELL/0] OUT Successfully destroyed container
