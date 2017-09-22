@@ -11,17 +11,25 @@ module.exports = {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons' },
     ],
   },
+  plugins: ['~/plugins/vuetify.js'],
   /*
   ** Global CSS
   */
-  css: ['~/assets/css/main.css'],
+  css: [
+    '~/assets/style/app.styl',
+  ],
   /*
   ** Add axios globally
   */
   build: {
-    vendor: ['axios'],
+    vendor: [
+      'axios',
+      'vuetify',
+    ],
+    extractCSS: true,
     /*
     ** Run ESLINT on save
     */

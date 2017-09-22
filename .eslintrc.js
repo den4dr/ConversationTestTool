@@ -13,12 +13,13 @@ module.exports = {
   // add your custom rules here
   rules: {
     "import/no-unresolved": [
-      "error",
+      "warn",
       {
-        "ignore": [ '~' ]
+        "ignore": [ '~','vue' ]
       }
     ],
-    "import/extensions": 0
+    "import/extensions": 0,
+    "no-param-reassign": ["error", { "props": false }]
   },
   globals: {}
 }

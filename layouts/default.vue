@@ -1,16 +1,21 @@
 <template>
-  <div>
-    <nuxt/>
-    <my-footer/>
-  </div>
+  <v-app light>
+    <div>
+      <my-header/>
+      <nuxt/>
+      <my-footer/>
+    </div>
+  </v-app>
 </template>
 
 <script>
 import MyFooter from '~/components/Footer.vue';
+import MyHeader from '~/components/Header.vue';
 
 export default {
   components: {
     MyFooter,
+    MyHeader,
   },
 };
 </script>
