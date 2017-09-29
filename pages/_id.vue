@@ -45,7 +45,7 @@ export default {
 .info
 {
   font-weight: 300;
-  color: #9aabb1;
+  color: rgba(255,255,255,0.87);
   margin: 0;
   margin-top: 10px;
 }
