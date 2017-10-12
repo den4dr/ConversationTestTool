@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="container">
       <img src="~assets/img/logo.png" alt="Nuxt.js Logo" class="logo" />
       <h1 class="title">
         USERS
@@ -30,19 +30,16 @@ export default {
 };
 </script>
 
-<style scoped>
+<style scoped lang="stylus">
 .title
-{
   margin: 30px 0;
-}
+
 .users
-{
   list-style: none;
   margin: 0;
   padding: 0;
-}
+
 .user
-{
   margin: 10px 0;
-}
+
 </style>

@@ -14,7 +14,10 @@ module.exports = {
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons' },
     ],
   },
-  plugins: ['~/plugins/vuetify.js'],
+  plugins: [
+    '~/plugins/vuetify',
+    '~plugins/vue-js-modal',
+  ],
   /*
   ** Global CSS
   */
@@ -28,6 +31,7 @@ module.exports = {
     vendor: [
       'axios',
       'vuetify',
+      'moment',
     ],
     extractCSS: true,
     /*
